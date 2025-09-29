@@ -1,0 +1,24 @@
+
+
+server:
+  port: 8080
+
+spring:
+  application:
+    name: Auth&user
+  datasource:
+    url: jdbc:postgresql://localhost:5432/authdb
+    username: postgres
+    password: Nikhilks!12
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+
+security:
+  jwt:
+    secret: "replace-with-very-long-secret-in-prod"  # use Vault/KMS in production
+    access-token-ttl-seconds: 900       # 15 minutes
+    refresh-token-ttl-seconds: 604800   # 7 days
