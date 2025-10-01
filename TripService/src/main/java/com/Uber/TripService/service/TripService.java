@@ -1,21 +1,25 @@
 package com.Uber.TripService.service;
 
 
+import com.Uber.TripService.Mapper;
+import com.Uber.TripService.dto.LocationDto;
 import com.Uber.TripService.dto.TripDto;
 import com.Uber.TripService.dto.TripRequestDto;
 import com.Uber.TripService.model.Trip;
+import com.Uber.TripService.model.TripEventAudit;
+import com.Uber.TripService.model.TripStatus;
 import com.Uber.TripService.repo.TripEventAuditRepository;
 import com.Uber.TripService.repo.TripOfferRepository;
 import com.Uber.TripService.repo.TripRepository;
-import lombok.RequiredArgsConstructor;
+
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import java.math.BigDecimal;
 import java.time.Instant;
+import java.util.Map;
 import java.util.UUID;
 
 @Service
-@RequiredArgsConstructor
 public class TripService {
     private final TripRepository tripRepository;
     private final TripOfferRepository tripOfferRepository;

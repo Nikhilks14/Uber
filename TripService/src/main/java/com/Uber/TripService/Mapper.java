@@ -4,6 +4,7 @@ package com.Uber.TripService;
 //import com.example.tripservice.dto.*;
 //import com.example.tripservice.entity.*;
 
+import com.Uber.TripService.dto.LocationDto;
 import com.Uber.TripService.dto.TripDto;
 import com.Uber.TripService.model.Trip;
 

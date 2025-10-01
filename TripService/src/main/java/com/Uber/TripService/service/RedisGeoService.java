@@ -4,7 +4,10 @@ package com.Uber.TripService.service;
 import lombok.RequiredArgsConstructor;
 //import org.springframework.data.redis.core.RedisTemplate;
 //import org.springframework.data.redis.connection.RedisGeoCommands;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.data.geo.*;
+import org.springframework.data.redis.connection.RedisGeoCommands;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 
 import java.time.Duration;
@@ -13,12 +16,19 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
-@RequiredArgsConstructor
+
 public class RedisGeoService {
+
+
     private final RedisTemplate<String, String> redis;
 
     private static final String GEO_KEY = "drivers:geo";
     private static final String DRIVER_META_PREFIX = "driver:%s:meta";
+
+
+    public RedisGeoService(@Qualifier("redisTemplate") RedisTemplate<String, String> redis) {
+        this.redis = redis;
+    }
 
     public void updateDriverLocation(Long driverId, double lat, double lon) {
         redis.opsForGeo().add(GEO_KEY, new Point(lon, lat), String.valueOf(driverId));

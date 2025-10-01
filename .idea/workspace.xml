@@ -5,30 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e66c6f7-1ca9-4adf-947e-d6624fc14cce" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Notification/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Notification/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Notification/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Notification/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Notification/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Notification/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Notification/src/main/java/com/Uber/Notification/NotificationApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Notification/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Notification/src/test/java/com/Uber/Notification/NotificationApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PaymentService/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PaymentService/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PaymentService/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PaymentService/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PaymentService/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PaymentService/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PaymentService/src/main/java/com/Uber/PaymentService/PaymentServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PaymentService/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PaymentService/src/test/java/com/Uber/PaymentService/PaymentServiceApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TripService/src/main/java/com/Uber/TripService/Mapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/TripService/src/main/java/com/Uber/TripService/Mapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TripService/src/main/java/com/Uber/TripService/service/KafkaProducerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/TripService/src/main/java/com/Uber/TripService/service/KafkaProducerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TripService/src/main/java/com/Uber/TripService/service/RedisGeoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/TripService/src/main/java/com/Uber/TripService/service/RedisGeoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TripService/src/main/java/com/Uber/TripService/service/TripService.java" beforeDir="false" afterPath="$PROJECT_DIR$/TripService/src/main/java/com/Uber/TripService/service/TripService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TripService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/TripService/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
