@@ -13,8 +13,15 @@ public class Trip {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "trip_uuid", unique = true, nullable = false)
+    @Column(name = "trip_uuid", unique = true, updatable = false, nullable = false)
     private UUID tripUuid = UUID.randomUUID();
+
+    @PrePersist
+    public void generateUuid(){
+        if(tripUuid == null) tripUuid = UUID.fromString(UUID.randomUUID().toString());
+    }
+
+
 
     @Column(name = "rider_id", nullable = false)
     private Long riderId;

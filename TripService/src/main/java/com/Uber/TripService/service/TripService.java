@@ -38,6 +38,7 @@ public class TripService {
     @Transactional
     public TripDto requestTrip(Long riderId, TripRequestDto req) {
         Trip trip = Trip.builder()
+                .tripUuid(UUID.randomUUID())
                 .riderId(riderId)
                 .originLat(req.getOrigin().getLat())
                 .originLng(req.getOrigin().getLng())
